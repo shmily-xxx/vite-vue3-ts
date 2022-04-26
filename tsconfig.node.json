@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,//解决 path“只能在使用 “allowSyntheticDefaultImports“ 标志时进行默认导入报错
+    "moduleResolution": "node"
+  },
+  "include": ["vite.config.ts"]
+}

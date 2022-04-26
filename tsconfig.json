@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // "noImplicitAny":true,
+    // "suppressImplicitAnyIndexErrors":true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ],
+      "utils/*": ["src/utils/*"] // 根据ts配置项设置path属性可以自定义引入的路径
+    },
+    "types": ["vite/client"],
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
