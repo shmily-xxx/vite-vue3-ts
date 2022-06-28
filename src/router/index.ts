@@ -28,17 +28,21 @@ const routes: RouteRecordRaw[] = [
         meta: {
           title: 'page1'
         },
+      },
+      {
+        path: 'page',
+        component: () => import('views/page/page.vue'),
+        meta: {
+          title: 'page'
+        },
       }
     ],
   },
   {
-    path: '/x',
-    component: () => import('layout/x.vue'),
-    name: 'x',
-    meta: {
-      title: '登录页'
-    }
-  },
+    path: '/:any(.*)',
+    name: 'notFound',
+    component: () => import('@/views/errors/404.vue'),
+  }
 ]
 
 const router = createRouter({

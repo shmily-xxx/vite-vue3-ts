@@ -1,8 +1,5 @@
-import { createStore } from 'vuex'
-import user  from './modules/user'
-const store = createStore({
-  modules: {
-    user
-  }
-})
+import { createPinia } from 'pinia'
+import piniaPluginPersist from 'pinia-plugin-persist'
+const store = createPinia()
+store.use(piniaPluginPersist)
 export default store
