@@ -11,7 +11,7 @@ function resolve(dir) {
 export default defineConfig({
   server: {
     open: true, //vite项目启动时自动打开浏览器
-    port: 8080, //vite项目启动时自定义端口
+    port: 8081, //vite项目启动时自定义端口
     hmr: true, //开启热更新
 
     // proxy: {
